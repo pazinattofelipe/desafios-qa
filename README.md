@@ -1,31 +1,29 @@
-# Desafios para vagas de QA na Idwall
+## Instrucoes para rodar o projeto:
+-Importar o projeto desafioQa como Maven no Eclipse;
+-Baixar o JBehave, conforme explicado no topico "How to install the Eclipse JBehave Plug-In" nesse link:
+-https://testguild.com/jbehave-bdd-plugin/
 
-Aqui estão os desafios para a primeira fase de testes de candidatos da IDwall para a vaga de Analista/Engenheiro de Qualidade de Software.
+-Rodar a classe RestStoryRunner como Junit para executar os scenarios do arquivo Reports.story, e passar o token pela vm arguments como parametro:
+-Dtoken="********-****-****-****-************"
 
-Os requisitos mínimos para cada tipo de teste estão no respectivo diretório.
+O scenario conhecido e o ultimo do Story file;
 
-* [Desafio QA Engineer - API](https://github.com/idwall/desafios-qa/tree/master/qa-engineer-api)
-* [Desafio QA Engineer - Mobile](https://github.com/idwall/desafios-qa/tree/master/qa-engineer-mobile)
-* [Desafio QA Junior e Pleno](https://github.com/idwall/desafios-qa/tree/master/qa-junior-pleno)
 
-## Como entregar estes desafios
-* Efetuar um _fork_ deste repositório em um gerenciador Git de sua preferência, como Github, Bitbucket etc.
-* Ao final do teste, enviar o link do repositório para o recrutador.
-* Fique a vontade para adicionar qualquer tipo de conteúdo que julgue útil ao projeto. Também é permitido alterar/acrescentar um README com instruções de como executá-lo, melhorias de design etc.
+## Escolha das ferramentas:
+Os seguintes foram os pontos que justificam as ferramentas escolhidas:
+-Java: Linguagem popular e amplamenta utilizada;
+-JBehave: Apresentacao facil e bastante amigavel atraves dos Story files, ate mesmo para pessoas nao tecnicas. Possibilidade de parametrizar scenarios
+diferentes com base nos Example tables;
 
-**Obs.: Não fazer um _Pull Request_ para este projeto!**
 
-#### Com o que devo me preocupar quando for entregar os desafios?
-- Descreva como utilizar e executar a sua solução;
-- Descreva o processo de resolução dos desafios;
-- Descreva a motivação e o porque da utilização de cada tecnologia;
-- Descreva o que considera interessante sabermos :)
-- Não se limitar aos requisitos destes desafios. Sinta-se em casa em adicionar mais detalhes a solução.
+## Observacoes:
+-Caso seja necessario, alterar o timeout do story file (useStoryTimeoutInSecs) dentro da classe RestStoryRunner. O Valor esta em segundos, coloquei um
+valor alto, pois estava demorando alguns minutos pra retornar a consulta;
+-Aumentar o counter while do method RestUtilitiesMethods.runGetRequest para aumentar o numero de vezes que sao enviadas o GET para buscar o relatorio;
+-O report gerado pelo JBehave apos cada execucao fica localizado no caminho <PROJECT>\target\jbehave\view\index.html;
 
-## Carreira IDwall
 
-Caso queira mais detalhes de como trabalhamos, quais são nossos valores e ideais, confira a página [Carreira IDwall](https://idwall.gupy.io/)
-
-Mesmo que seu perfil não esteja listado nas vagas em aberto, lhe encorajamos a mandar seu CV! Valorizamos bons profissionais sempre e gostamos de manter contato com gente boa.
-
-Boas implementações! 🎉
+## Melhorias:
+-Colocar as mensagens de erro que estao nos Examples das stories em arquivos de property;
+-Validar tamanho dos campos aceitos. Exemplo, Boundary testing;
+-Deixar os steps em portugues;
