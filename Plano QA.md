@@ -28,23 +28,23 @@ e em conjunto com o PO, definir qual a prioridade para a correcao do mesmo;
 
 ## Abaixo, segue uma relacao das principais ferramentas/metodologias utilizadas:
 
-Scrum:
+Scrum:<br/>
 Entrega incremental de valor ao negocio. Entregas entre 1 e 4 semanas a depender
-da demanda do time;
+da demanda do time;<br/>
 
-Azure DevOps:
-Gerenciamento de Stories e Bugs atraves de um board Kanban;
-Pipeline CICD;
-Gerenciamento do Plano de Testes (Criacao de Test Cases e Execucao);
-Repositorio de Codigo;
+Azure DevOps:<br/>
+Gerenciamento de Stories e Bugs atraves de um board Kanban;<br/>
+Pipeline CICD;<br/>
+Gerenciamento do Plano de Testes (Criacao de Test Cases e Execucao);<br/>
+Repositorio de Codigo;<br/>
 
-Comunicacao entre equipes:
-Hangouts, Skype ou Slack;
+Comunicacao entre equipes:<br/>
+Hangouts, Skype ou Slack;<br/>
 
-Automacao:
-Web (Java, Selenium, JBehave);
-API (Java, JBehave, RestAssured or Spring);
-Mobile (Java, Selenium, Appium);
+Automacao:<br/>
+Web (Java, Selenium, JBehave);<br/>
+API (Java, JBehave, RestAssured or Spring);<br/>
+Mobile (Java, Selenium, Appium);<br/>
 
-Confluence Wiki:
-Documentos e procedimentos;
+Confluence Wiki:<br/>
+Documentos e procedimentos;<br/>
